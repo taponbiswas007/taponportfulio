@@ -1,45 +1,30 @@
-var photos = ['js/images/apartment.png','js/images/house.png','js/images/office.png','js/images/villa.png',];
-var img = document.querySelector('.catagory img');
-var i = 0;
-function next(){
-    if(i<photos.length-1){
-    i++;
-    img.src=photos[i];
-    }else{
-        i=0;
-        img.src=photos[i];
-    }
-    
-}
-function prev(){
-    if(i>0){
-    i--;
-    img.src=photos[i];
-    }else{
-        i=photos.length-1;
-        img.src=photos[i];
-    }
-    
-}
- // property item swiper //
 
-var swiper = new Swiper(".mySwiper-01", {
-    slidesPerView: 1.5,
-    spaceBetween: 30,
-    centeredSlides: true,
-
+$(document).ready(function(){
+  $(".bars ,.cross").click(function(){
+    $(".bars").toggle();
+    $(".cross").toggle();
+    $(".menu").slideToggle();
   });
 
-  // featured item swiper //
+  animateWords($(".my-description").text().trim().split(" "));
 
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    centeredSlides: true,
-    rewind: true,
-    navigation: {
-      nextEl: ".btn-next",
-      prevEl: ".btn-prev",
-    },
-  });
+function animateWords(words) {
+  let i = 0;
+  const paragraph = $(".my-description");
+  paragraph.empty();
+
+  function addWord() {
+    if (i < words.length) {
+      paragraph.append(`<span>${words[i]}</span> `);
+      i++;
+      setTimeout(addWord, 500); // Adjust the delay (in milliseconds) as needed
+    }
+  }
+
+  addWord();
+
+}
+
+$('.html-circle').addClass('filled');
+});
