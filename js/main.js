@@ -26,5 +26,34 @@ function animateWords(words) {
 
 }
 
-$('.html-circle').addClass('filled');
+
 });
+
+const numb1 = document.querySelector(".progress-value");
+const numb2 = document.querySelector(".html-progress-value");
+const numb3 = document.querySelector(".css-progress-value");
+const numb4 = document.querySelector(".cssbar");
+let counter = 0;
+
+const interval = setInterval(() => {
+  if (counter === 95) {
+    clearInterval(interval);
+  } else {
+    counter += 1;
+    numb1.textContent = counter + "%";
+
+    if (counter === 95) {
+      numb2.textContent = counter + "%";
+    }
+    if (counter <= 90) {
+      numb3.textContent = counter + "%";
+    }
+    if (counter <= 90) {
+      numb4.textContent = counter + "%";
+    }
+  }
+}, 31);
+
+
+
+
