@@ -198,18 +198,14 @@ img{
 
 /*----hero area stat----*/
 .hero{
-    padding: 200px 0 200px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    padding: 50px 0 50px 0;
+    position: relative;
 }
 .hero-left{
-    width: 50%;
+    text-align: center;
     z-index: 1;
 }
-.hero-right{
-    width: 50%;
-}
+
 .welcome{
     font-family: 'Mulish';
     font-style: normal;
@@ -218,6 +214,7 @@ img{
     line-height: 24px;
     color: #F9E900;
     animation: welcome 2s infinite;
+    -webkit-text-stroke: #F5F5F5 .5px;
 }
 @keyframes welcome{
     0%{
@@ -252,6 +249,7 @@ img{
     color: transparent; 
     transition: 2s ease;
     animation: myname 10s infinite;
+    -webkit-text-stroke: #F5F5F5 .7px;
 }
 @keyframes myname{
     0% {
@@ -289,6 +287,7 @@ img{
     line-height: 24px;
     color: #20FF00;
     margin-top: 0;
+    -webkit-text-stroke: #F5F5F5 .7px;
 }
 .my-description{
     font-family: 'Mulish';
@@ -298,6 +297,7 @@ img{
     line-height: 18px;
     color: #00FBD8;
     overflow: hidden;
+    -webkit-text-stroke: #F5F5F5 .7px;
 }
 .my-description span {
     display: inline-block;
@@ -324,6 +324,7 @@ img{
     line-height: 18px;
     color: #FFE937;
     margin-top: 20px;
+    -webkit-text-stroke: #F5F5F5 .7px;
 }
 .why-choos-me b{
     color: #20FF00;
@@ -333,6 +334,8 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+    
 }
 .progress-area{
     background: rgba(250 ,250, 250 ,0.25) ;
@@ -342,16 +345,21 @@ img{
     flex-direction: column;
     border-radius: 20px;
     padding: 10px 10px 20px 10px;
-
+    width: 22%;
+    animation: progress-area infinite ;
     
 }
+
+
 .html-progress-head{
     font-size: 20px;
     font-weight: 700;
     display: inline-block;
-    color: #20FF00;
+    color: #2406F7;
     text-transform: uppercase;
     font-family: 'poppins';
+    -webkit-text-stroke: #F5F5F5 1px;
+    text-align: center;
 }
 .progress {
 width: 150px;
@@ -359,8 +367,9 @@ height: 150px !important;
 line-height: 150px;
 background: none;
 margin: 20px;
-box-shadow: none;
 position: relative;
+box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+border-radius: 50%;
 }
 .progress:after {
 content: "";
@@ -387,7 +396,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background: none;
-border-width: 12px;
+border-width: 14px;
 border-style: solid;
 position: absolute;
 top: 0;
@@ -426,7 +435,7 @@ top: 5%;
 left: 5%;
 }
 .progress.blue .progress-bar {
-border-color: #049dff;
+border-color: #15399E;
 }
 .progress.blue .progress-left .progress-bar {
 animation: loading-2 1.5s linear forwards 1.8s;
@@ -436,6 +445,18 @@ border-color: #fdba04;
 }
 .progress.yellow .progress-left .progress-bar {
     animation: loading-3 1.5s linear forwards 1.8s;
+}
+.progress.js-color .progress-bar {
+border-color: #f09;
+}
+.progress.js-color .progress-left .progress-bar {
+    animation: loading-4 .5s linear forwards 1.8s;
+}
+.progress.bootstrap-color .progress-bar {
+border-color: #f06;
+}
+.progress.bootstrap-color .progress-left .progress-bar {
+    animation: loading-5 1.5s linear forwards 1.8s;
 }
 
 @keyframes loading-1 {
@@ -468,6 +489,26 @@ border-color: #fdba04;
     transform: rotate(162deg);
     }
 }
+@keyframes loading-4 {
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+100% {
+    -webkit-transform: rotate(151deg);
+    transform: rotate(151deg);
+    }
+}
+@keyframes loading-5 {
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+100% {
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+    }
+}
   
 .html-progress{
     background: #ffffff;
@@ -478,11 +519,11 @@ border-color: #fdba04;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 .html-progress::after{
     content: ' ';
-    background: #049dff;
+    background: #15399E;
     border-radius: 20px;
     position: absolute;
     inset: 3px;
@@ -525,7 +566,32 @@ border-color: #fdba04;
         width: 90%;
     }
 }
-
+.js-progress::after{
+    background: #f09;
+    width: 66%;
+    animation: jsbar 3s forwards;
+}
+@keyframes jsbar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 66%;
+    }
+}
+.bootstrap-progress::after{
+    background: #f06;
+    width: 90%;
+    animation: bootstrapbar 4.5s forwards;
+}
+@keyframes bootstrapbar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
 .html-progress-value , .cssbar{
     color: #ffffff;
     font-size: 16px;
@@ -534,6 +600,23 @@ border-color: #fdba04;
     position: absolute;
     z-index: 1;
 }
+.jsbar{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    position: absolute;
+    z-index: 1; 
+}
+.bootstrapbar{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    position: absolute;
+    z-index: 1; 
+}
+
 /*----hero area end----*/
 
 
