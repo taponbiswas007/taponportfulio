@@ -14,15 +14,18 @@
 
     <!-- swiper css-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!--bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-     <!--bootstrap link -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--main stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
 
-     <!--main stylesheet-->
-     <link rel="stylesheet" href="css/style.css">
-
-     <!--responsive css-->
-     <link rel="stylesheet" href="css/responsive.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -31,7 +34,7 @@
     <!--header and hero section start-->
         <div class="headandheroarea">
             <div class="overly"></div>
-            <div class="container-fuild custompadding">
+            <div class="container-fluid">
                 <div class="header">
                     <div class="logo">
                         <a href="index.html" class="logolink"><img src="images/homepage/logo.png" alt="logo"></a>   
@@ -63,84 +66,126 @@
                     </div>
                 </div>
                 <div class="hero">
-                    <div class="hero-left">
-                        <p class="welcome">Welcome to my world</p>
-                    <h1 class="my-name">tapon chandra sarker</h1>
-                    <h1 class="my-header">Web Designer & Figma to HTML | AI to HTML | XD to HTML Convert specialist.</h1>
-                    <h2 class="my-description">Welcome to my portfolio! I'm Tapon Chandra Sarker, a versatile web designer with expertise in transforming Figma, AI, and XD designs into pixel-perfect HTML. With a passion for crafting visually stunning and user-friendly websites, I bring your ideas to life with precision and creativity. My commitment to excellence and attention to detail ensures your project's success. Choose me to elevate your online presence and deliver a seamless digital experience. Let's collaborate and turn your visions into captivating web solutions.</h2>
-                    <h3 class="why-choos-me"> <b>Why Choose Me?</b> <br>
+                    <div class="hero-left" data-aos="zoom-in" >
+                        <p class="welcome" data-aos="fade-right">Welcome to my world</p>
+                    <h1 class="my-name"  data-aos="fade-left">tapon chandra sarker</h1>
+                    <h1 class="my-header" data-aos="zoom-in">Web Designer & Figma to HTML | AI to HTML | XD to HTML Convert specialist.</h1>
+                    <h2 class="my-description" >Welcome to my portfolio! I'm Tapon Chandra Sarker, a versatile web designer with expertise in transforming Figma, AI, and XD designs into pixel-perfect HTML. With a passion for crafting visually stunning and user-friendly websites, I bring your ideas to life with precision and creativity. My commitment to excellence and attention to detail ensures your project's success. Choose me to elevate your online presence and deliver a seamless digital experience. Let's collaborate and turn your visions into captivating web solutions.</h2>
+                    <h3 class="why-choos-me"  data-aos="zoom-in"> <b>Why Choose Me?</b> <br>
                         Years of expertise, a knack for detail, and a commitment to delivering web excellence. Elevate your digital presence with me today.</h3>
                     </div>
 
-                    <div class="hero-right">
+                    <div class="hero-right" data-aos="fade-right">
                             <!-- html progress area start -->
-                        <div class="progress-area">
+                        <div class="progress-area" data-aos="fade-up"
+                            data-aos-duration="3000">
                             <h1 class="html-progress-head">expart in <br> html5</h1>
-                            <div class="progress blue">
-                                <span class="progress-left">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <div class="progress-value">0%</div>
-                            </div>
-                            <div class="html-progress">
-                                <div class="html-progress-value">0%</div>
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number" class="progress-value html">
+                                            0%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg id="html" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#DA22FF"/>
+                                        <stop offset="100%" stop-color="#9733EE"/>
+
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
                             </div>
                         </div>
                                 <!-- html progress area end -->
 
                                 <!-- css progress area start -->
-                        <div class="progress-area">
+                        <div class="progress-area" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <h1 class="html-progress-head">expart in <br> css3</h1>
-                            <div class="progress yellow">
-                                <span class="progress-left">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <div class="css-progress-value progress-value">0%</div>
-                            </div>
-                            <div class="html-progress css-progress">
-                                <div class="cssbar">0%</div>
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number" class="progress-value css">
+                                            0%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg id="css" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#DA22FF"/>
+                                        <stop offset="100%" stop-color="#9733EE"/>
+
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
                             </div>
                         </div>
                                 <!-- css progress area end -->
 
                                 <!-- javascript progress area start -->
-                        <div class="progress-area">
+                        <div class="progress-area" data-aos="fade-up"
+                        data-aos-duration="3000">
                             <h1 class="html-progress-head">expart in <br> javascript</h1>
-                            <div class="progress yellow js-color">
-                                <span class="progress-left">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <div class="js-progress-value progress-value">0%</div>
-                            </div>
-                            <div class="html-progress css-progress js-progress">
-                                <div class="jsbar">0%</div>
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number" class="progress-value js">
+                                            0%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg id="js" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#DA22FF"/>
+                                        <stop offset="100%" stop-color="#9733EE"/>
+
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
                             </div>
                         </div>
                                 <!-- javascript progress area end -->
 
                                 <!-- bootstrap progress area start -->
-                        <div class="progress-area">
+                        <div class="progress-area" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <h1 class="html-progress-head">expart in <br> bootstrap5</h1>
-                            <div class="progress yellow bootstrap-color">
-                                <span class="progress-left">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <span class="progress-right">
-                                    <span class="progress-bar"></span>
-                                </span>
-                                <div class="bootstrap-progress-value progress-value">0%</div>
-                            </div>
-                            <div class="html-progress css-progress bootstrap-progress">
-                                <div class="bootstrapbar">0%</div>
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number" class="progress-value bootstrap">
+                                            0%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg id="bootstrap" xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#DA22FF"/>
+                                        <stop offset="100%" stop-color="#9733EE"/>
+
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
                             </div>
                         </div>
                                 <!-- bootstrap progress area end -->
@@ -151,38 +196,35 @@
 
         <!--header and hero section start-->
        
-    <!-- new property section start -->
+    <!-- hire for section start -->
 
     <section class="new-property">
         <div class="new-property-bg">
             <div class="container-fuild custompadding">
                 <div class="new-property-maincontant">
                     <div class="new-property-heading">
-                        <h1>Looking to Buy a new property or
+                        <h1>Looking to hire me a new project or
                             <span>
                                 <div class="property-underline"></div>
                             </span>
-                            Sell an existing one?
+                            Develope your old project?
                            </h1>
                     </div>
 
                     <!-- new property catagary start-->
 
-                    <div class="new-property-catagory">
-                        <div class="apartment">
-                            <img class="new-property-catagory-img" src="images/homepage/web-desinger.png" alt="">
-                        </div>
-                        <div class="house">
-                            <img class="new-property-catagory-img" src="images/homepage/web-developer.png" alt="">
-                        </div>
-                        <div class="office">
-                            <img class="new-property-catagory-img" src="images/homepage/figma-to-html.png" alt="">
-                        </div>
-                        <div class="villa">
-                            <img class="new-property-catagory-img" src="images/homepage/xd-to-html.png" alt="">
-                        </div>
-                        <div class="villa">
-                            <img class="new-property-catagory-img" src="images/homepage/ai-to-html.png" alt="">
+                    <div class="service-full-area">
+                        <div class="container-fluid">
+                            <div class="service-main-area">
+                                <div class="service-area">
+                                    <div class="service-images">
+                                        <img src="images/homepage/web-desinger.png" alt="">
+                                    </div>
+                                    <div class="service-title">
+                                        <span>web desinger</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1896,7 +1938,7 @@
 
     <!-- javascript section-->
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

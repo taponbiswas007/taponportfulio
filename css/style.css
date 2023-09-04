@@ -198,7 +198,7 @@ img{
 
 /*----hero area stat----*/
 .hero{
-    padding: 50px 0 50px 0;
+    padding-bottom: 50px;
     position: relative;
 }
 .hero-left{
@@ -214,7 +214,7 @@ img{
     line-height: 24px;
     color: #F9E900;
     animation: welcome 2s infinite;
-    -webkit-text-stroke: #F5F5F5 .5px;
+    -webkit-text-stroke: #F5F5F5 .3px;
 }
 @keyframes welcome{
     0%{
@@ -249,7 +249,7 @@ img{
     color: transparent; 
     transition: 2s ease;
     animation: myname 10s infinite;
-    -webkit-text-stroke: #F5F5F5 .7px;
+    -webkit-text-stroke: #F5F5F5 .4px;
 }
 @keyframes myname{
     0% {
@@ -287,7 +287,7 @@ img{
     line-height: 24px;
     color: #20FF00;
     margin-top: 0;
-    -webkit-text-stroke: #F5F5F5 .7px;
+    -webkit-text-stroke: #F5F5F5 .5px;
 }
 .my-description{
     font-family: 'Mulish';
@@ -297,7 +297,7 @@ img{
     line-height: 18px;
     color: #00FBD8;
     overflow: hidden;
-    -webkit-text-stroke: #F5F5F5 .7px;
+    -webkit-text-stroke: #F5F5F5 .3px;
 }
 .my-description span {
     display: inline-block;
@@ -324,7 +324,7 @@ img{
     line-height: 18px;
     color: #FFE937;
     margin-top: 20px;
-    -webkit-text-stroke: #F5F5F5 .7px;
+    -webkit-text-stroke: #F5F5F5 .4px;
 }
 .why-choos-me b{
     color: #20FF00;
@@ -334,11 +334,11 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     
 }
 .progress-area{
-    background: rgba(250 ,250, 250 ,0.25) ;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,11 +346,92 @@ img{
     border-radius: 20px;
     padding: 10px 10px 20px 10px;
     width: 22%;
-    animation: progress-area infinite ;
+    row-gap: 20px;
+    
     
 }
 
+.skill{
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 50%;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
 
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    
+}
+#html circle{
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 45;
+    }
+}
+#css circle{
+    animation: cssanim 2s linear forwards;
+}
+
+@keyframes cssanim{
+    100%{
+        stroke-dashoffset: 31.5;
+    }
+}
+#js circle{
+    animation: jsanim 2s linear forwards;
+}
+
+@keyframes jsanim{
+    100%{
+        stroke-dashoffset: 153;
+    }
+}
+#bootstrap circle{
+    animation: bootstrapanim 2s linear forwards;
+}
+
+@keyframes bootstrapanim{
+    100%{
+        stroke-dashoffset: 49.5;
+    }
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-value{
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Gotham';
+}
 .html-progress-head{
     font-size: 20px;
     font-weight: 700;
@@ -358,264 +439,12 @@ img{
     color: #2406F7;
     text-transform: uppercase;
     font-family: 'poppins';
-    -webkit-text-stroke: #F5F5F5 1px;
+    -webkit-text-stroke: #F5F5F5 .6px;
     text-align: center;
 }
-.progress {
-width: 150px;
-height: 150px !important;
-line-height: 150px;
-background: none;
-margin: 20px;
-position: relative;
-box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
-border-radius: 50%;
-}
-.progress:after {
-content: "";
-width: 100%;
-height: 100%;
-border-radius: 50%;
-border: 12px solid #fff;
-position: absolute;
-top: 0;
-left: 0;
-}
-.progress>span {
-width: 50%;
-height: 100%;
-overflow: hidden;
-position: absolute;
-top: 0;
-z-index: 1;
-}
-.progress .progress-left {
-left: 0;
-}
-.progress .progress-bar {
-width: 100%;
-height: 100%;
-background: none;
-border-width: 14px;
-border-style: solid;
-position: absolute;
-top: 0;
-}
-.progress .progress-left .progress-bar {
-left: 100%;
-border-top-right-radius: 80px;
-border-bottom-right-radius: 80px;
-border-left: 0;
--webkit-transform-origin: center left;
-transform-origin: center left;
-}
-.progress .progress-right {
-right: 0;
-}
-.progress .progress-right .progress-bar {
-left: -100%;
-border-top-left-radius: 80px;
-border-bottom-left-radius: 80px;
-border-right: 0;
--webkit-transform-origin: center right;
-transform-origin: center right;
-animation: loading-1 1.8s linear forwards;
-}
-.progress .progress-value {
-width: 90%;
-height: 90%;
-border-radius: 50%;
-background: #000;
-font-size: 24px;
-color: #fff;
-line-height: 135px;
-text-align: center;
-position: absolute;
-top: 5%;
-left: 5%;
-}
-.progress.blue .progress-bar {
-border-color: #15399E;
-}
-.progress.blue .progress-left .progress-bar {
-animation: loading-2 1.5s linear forwards 1.8s;
-}
-.progress.yellow .progress-bar {
-border-color: #fdba04;
-}
-.progress.yellow .progress-left .progress-bar {
-    animation: loading-3 1.5s linear forwards 1.8s;
-}
-.progress.js-color .progress-bar {
-border-color: #f09;
-}
-.progress.js-color .progress-left .progress-bar {
-    animation: loading-4 .5s linear forwards 1.8s;
-}
-.progress.bootstrap-color .progress-bar {
-border-color: #f06;
-}
-.progress.bootstrap-color .progress-left .progress-bar {
-    animation: loading-5 1.5s linear forwards 1.8s;
-}
 
-@keyframes loading-1 {
-0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-}
-@keyframes loading-2 {
-0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    }
-100% {
-    -webkit-transform: rotate(171deg);
-    transform: rotate(171deg);
-    }
-}
-@keyframes loading-3 {
-0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    }
-100% {
-    -webkit-transform: rotate(162deg);
-    transform: rotate(162deg);
-    }
-}
-@keyframes loading-4 {
-0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    }
-100% {
-    -webkit-transform: rotate(151deg);
-    transform: rotate(151deg);
-    }
-}
-@keyframes loading-5 {
-0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    }
-100% {
-    -webkit-transform: rotate(162deg);
-    transform: rotate(162deg);
-    }
-}
-  
-.html-progress{
-    background: #ffffff;
-    width: 100%;
-    height: 30px;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
-}
-.html-progress::after{
-    content: ' ';
-    background: #15399E;
-    border-radius: 20px;
-    position: absolute;
-    inset: 3px;
-    width: 95%;
-    animation: htmlbar 4.5s forwards;
-}
-@keyframes htmlbar{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 95%;
-    }
-}
-.css-progress{
-    background: #ffffff;
-    width: 100%;
-    height: 30px;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-}
-.css-progress::after{
-    content: ' ';
-    background: #fdba04;
-    border-radius: 20px;
-    position: absolute;
-    inset: 3px;
-    width: 90%;
-    animation: cssbar 4.5s forwards;
-}
-@keyframes cssbar{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-.js-progress::after{
-    background: #f09;
-    width: 66%;
-    animation: jsbar 3s forwards;
-}
-@keyframes jsbar{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 66%;
-    }
-}
-.bootstrap-progress::after{
-    background: #f06;
-    width: 90%;
-    animation: bootstrapbar 4.5s forwards;
-}
-@keyframes bootstrapbar{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-.html-progress-value , .cssbar{
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    position: absolute;
-    z-index: 1;
-}
-.jsbar{
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    position: absolute;
-    z-index: 1; 
-}
-.bootstrapbar{
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    position: absolute;
-    z-index: 1; 
-}
+
+
 
 /*----hero area end----*/
 
@@ -663,19 +492,30 @@ border-color: #f06;
 
 
 
-.apartment{
+.service-main-area{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.service-area{
     width: 20%;
-  }
-  .house{
-    width: 20%;
-  }
-  .office{
-    width: 20%;
-  }
-  .villa{
-    width: 20%;
-  }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    background: #ffffff;
+    box-shadow: 2px 5px 21px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+.service-area span{
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
   .new-property-catagory-img{
     height: 100%;
     width: 100%;
