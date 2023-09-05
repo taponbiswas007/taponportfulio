@@ -20,7 +20,9 @@ img{
     width: 100%;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* 
@@ -68,10 +70,8 @@ img{
     padding: 31px 15px 0px 20px;
     z-index: 999999999999;
     border: 6px solid #140c6c;
-    border-radius: 20px;
     top: 0;
-    left: 0;
-    display: none;
+    left: -100%;
    
    
 }

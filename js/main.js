@@ -1,9 +1,18 @@
 
 $(document).ready(function(){
-  $(".bars ,.cross").click(function(){
+  $(".bars").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".menu").slideToggle();
+    $(".menu").css({"left":0, "transition":".4s ease"
+      
+    }); 
+  });
+  $(".cross").click(function(){
+    $(".bars").toggle();
+    $(".cross").toggle();
+    $(".menu").css({"left":"-100%", "transition":".4s ease"
+      
+  }); 
   });
 
   animateWords($(".my-description").text().trim().split(" "));
