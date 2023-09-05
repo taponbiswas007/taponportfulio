@@ -3,17 +3,24 @@ $(document).ready(function(){
   $(".bars").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".menu").css({"left":0, "transition":".4s ease"
+    $(".nav-title").css({"display":"block" });
+    $(".menu").css({"width":"250px", "transition":".4s ease"}); 
+    $(".main-content-area").css({"width":"calc(100%-250px)", "transition":".4s ease"
       
     }); 
+    
   });
   $(".cross").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".menu").css({"left":"-100%", "transition":".4s ease"
+    $(".nav-title").css({"display":"none"});
+    $(".menu").css({"width":"100px", "transition":".4s ease"}); 
+    $(".main-content-area").css({"width":"calc(100%-100px)", "transition":".4s ease"
       
-  }); 
+    });  
+  
   });
+  
 
   animateWords($(".my-description").text().trim().split(" "));
 
@@ -69,6 +76,8 @@ const interval = setInterval(() => {
 }, 31);
 
 AOS.init();
+
+
 
 
 
