@@ -3,9 +3,9 @@ $(document).ready(function(){
   $(".bars").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".nav-title").css({"display":"block" });
-    $(".menu").css({"width":"250px", "transition":".4s ease"}); 
-    $(".main-content-area").css({"width":"calc(100%-250px)", "transition":".4s ease"
+    $(".nav-title").css({"opacity":"100%", "transition":".4s ease" });
+    $(".menu").css({"width":"200px", "transition":".4s ease"}); 
+    $(".main-content-area").css({"width":"calc(100%-200px)", "transition":".4s ease"
       
     }); 
     
@@ -13,9 +13,9 @@ $(document).ready(function(){
   $(".cross").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".nav-title").css({"display":"none"});
-    $(".menu").css({"width":"100px", "transition":".4s ease"}); 
-    $(".main-content-area").css({"width":"calc(100%-100px)", "transition":".4s ease"
+    $(".nav-title").css({"opacity":"0", "transition":".3s ease"});
+    $(".menu").css({"width":"60px", "transition":".4s ease"}); 
+    $(".main-content-area").css({"width":"calc(100%-60px)", "transition":".4s ease"
       
     });  
   
