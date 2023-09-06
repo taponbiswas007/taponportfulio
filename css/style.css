@@ -254,8 +254,9 @@ html{
 
 .hero-bottom{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    column-gap: 1%;
     
 }
 
@@ -265,10 +266,9 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
     padding: 10px 10px 20px 10px;
-    width: 22%;
     row-gap: 10px;
+    column-gap: 10px;
     
     
 }

@@ -4,8 +4,8 @@ $(document).ready(function(){
     $(".bars").toggle();
     $(".cross").toggle();
     $(".nav-title").css({"opacity":"100%", "transition":".4s ease" });
-    $(".menu").css({"width":"200px", "transition":".4s ease"}); 
-    $(".main-content-area").css({"width":"calc(100%-200px)", "transition":".4s ease"
+    $(".menu").css({"width":"165px", "transition":".4s ease"}); 
+    $(".main-content-area").css({"width":"calc(100%-165px)", "transition":".4s ease"
       
     }); 
     
