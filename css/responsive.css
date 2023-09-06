@@ -1,3 +1,12 @@
+
+@media (max-width: 1100px){
+    .service-area{
+        padding: 11px;
+    }
+    .service-area span{
+        font-size: 13px;
+    }
+}
 @media (max-width: 992px){
 
     .my-name{
@@ -12,7 +21,13 @@
     .html-progress-head{
         font-size: 12px;
     }
-
+    .service-area{
+        width: 19%;
+        padding: 12px;
+    }
+    .service-area span{
+        font-size: 10px;
+    }
   
 }
 @media (max-width: 768px){
@@ -37,6 +52,9 @@
     .progress-area{
        
         padding: 0px 0px 12px 0px;
+    }
+    .service-heading > h1{
+        font-size: 14px;
     }
 }
 @media (max-width: 481px){

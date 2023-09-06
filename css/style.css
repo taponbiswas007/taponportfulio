@@ -306,8 +306,8 @@ circle{
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 10px;
-    stroke-dasharray: 315;
-    stroke-dashoffset: 315;
+    stroke-dasharray: 345;
+    stroke-dashoffset: 345;
     
 }
 #html circle{
@@ -316,7 +316,7 @@ circle{
 
 @keyframes anim{
     100%{
-        stroke-dashoffset: 15.75;
+        stroke-dashoffset: 17.25;
     }
 }
 #css circle{
@@ -326,7 +326,7 @@ circle{
 
 @keyframes cssanim{
     100%{
-        stroke-dashoffset: 22.05;
+        stroke-dashoffset: 24.15;
     }
 }
 #js circle{
@@ -336,7 +336,7 @@ circle{
 
 @keyframes jsanim{
     100%{
-        stroke-dashoffset: 107.1;
+        stroke-dashoffset: 117.30;
     }
 }
 #bootstrap circle{
@@ -346,7 +346,7 @@ circle{
 
 @keyframes bootstrapanim{
     100%{
-        stroke-dashoffset: 34.65;
+        stroke-dashoffset: 37.95;
     }
 }
 .progress-bg{
@@ -438,6 +438,7 @@ circle{
     font-weight: 600;
     font-family: 'Inter';
     color: #f815ff;
+    -webkit-text-stroke: #3AF9F9 .2px;
 }
 
   /* service area end */
