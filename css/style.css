@@ -270,6 +270,7 @@ html{
     flex-direction: column;
     padding: 10px 10px 20px 10px;
     row-gap: 10px;
+    width: 125px;
     
     
 }
