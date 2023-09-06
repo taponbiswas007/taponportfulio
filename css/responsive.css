@@ -6,6 +6,9 @@
     .service-area span{
         font-size: 13px;
     }
+    .loginpage-area{
+        column-gap: 9px;
+    }
 }
 @media (max-width: 992px){
 
@@ -37,6 +40,14 @@
     }
     .chooscatagory > h1{
         font-size: 10px;
+    }
+    .loginpage-area {
+        flex-direction: column;
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+    .woner-pic{
+        width: 376px;
     }
 }
 @media (max-width: 768px){
@@ -91,6 +102,15 @@
     }
     .catagorylogo {
         width: 30px;
+    }
+    .inputloginemail{
+        width: 235px;
+    }
+    .inputloginpassword{
+        width: 235px;
+    }
+    .woner-pic {
+        width: 279px;
     }
 
 }
@@ -170,4 +190,46 @@
     .chooscatagory > h1{
         font-size: 11px;
     }
+    .inputloginemail {
+        width: 175px;
+    }
+    .inputloginpassword {
+        width: 175px;
+    }
+    .mainloginarea h1{
+        font-size: 20px;
+    }
+    .mainloginarea p{
+        font-size: 12px;
+    }
+    .mainloginarea h2::before {
+        width: 37%;
+        right: -30px;
+        top: 6px;
+    }
+    .mainloginarea h2::after {
+        width: 37%;
+        left: -30px;
+        top: 6px;
+    }
+    .loginpagesocialicon{
+        column-gap: 10px;
+    }
+    .mainloginarea h2{
+        font-size: 10px;
+    }
+    .loginareabottom p button{
+        font-size: 11px;
+    }
+    .mainloginarea p{
+        font-size: 9px;
+    }
+    .woner-pic {
+        width: 178px;
+        padding: 16px;
+    }
+    .mainloginarea{
+        padding: 20px 7px 20px 7px;
+    }
+
 }
