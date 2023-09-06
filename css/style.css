@@ -502,7 +502,7 @@ circle{
     padding-bottom: 44px;
     border-right: 1px solid #350FBF;
 }
-.catagory:last-child{
+.chooscatagory:last-child{
     border-right: none;
 }
 .chooscatagory>h1{
