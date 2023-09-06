@@ -7,7 +7,8 @@ $(document).ready(function(){
     $(".menu").css({"width":"165px", "transition":".4s ease"}); 
     $(".main-content-area").css({"width":"calc(100%-165px)", "transition":".4s ease"
       
-    }); 
+    });
+    
     
   });
   $(".cross").click(function(){
@@ -76,6 +77,34 @@ const interval = setInterval(() => {
 }, 31);
 
 AOS.init();
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var swiper = new Swiper(".small-screen", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var swiper = new Swiper(".smallest-screen", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 

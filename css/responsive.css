@@ -56,6 +56,36 @@
     .service-heading > h1{
         font-size: 14px;
     }
+    .responsive-service-main-area{
+        display: none;
+    }
+    .responsive-service{
+        display: block;
+    }
+   
+    .service-area {
+        width: 100%;
+        padding: 12px;
+        row-gap: 0px;
+    }
+    .service-area span {
+        font-size: 8px;
+    }
+    .service-images{
+        width: 60px;
+    }
+    .swiper-pagination{
+        margin-bottom: -15px;
+    }
+}
+@media (max-width: 600px){
+    .responsive-service{
+        display: none;
+    }
+    .small-screen{
+        display: block;
+    }
+
 }
 @media (max-width: 481px){
    
@@ -76,5 +106,23 @@
     }
     .progress-area {
      
+    }
+    .small-screen{
+        display:none;
+    }
+    .smallest-screen{
+        display: block;
+    }
+    .service-images {
+        width: 80px;
+    }
+    .service-area span {
+        font-size: 9px;
+    }
+    .service-heading > h1 {
+        font-size: 11px;
+    }
+    .service-underline{
+        height: 3px;
     }
 }

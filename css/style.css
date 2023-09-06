@@ -432,6 +432,15 @@ circle{
     border-radius: 25px;
     border: 6px solid #140c6c;
 }
+.responsive-service{
+    display: none;
+}
+.small-screen{
+    display: none;
+}
+.smallest-screen{
+    display: none;
+}
 .service-area span{
     text-transform: uppercase;
     font-size:14px;
