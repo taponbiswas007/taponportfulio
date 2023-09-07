@@ -761,9 +761,10 @@ circle{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #0fe645;
-    color: #1e49c0;
-    border: 1px solid #00FBD8;
+    background: #1e49c0;
+    color: #FFFFFF;
+    border: 1px solid #04031a;
+    padding-top: 2px;
 
 }
 

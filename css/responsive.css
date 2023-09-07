@@ -198,6 +198,8 @@
     }
     .mainloginarea h1{
         font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .mainloginarea p{
         font-size: 12px;
@@ -228,8 +230,9 @@
         width: 178px;
         padding: 16px;
     }
-    .mainloginarea{
-        padding: 20px 7px 20px 7px;
+    .loginploginbtn{
+        padding: 2px 20px;
     }
+   
 
 }
