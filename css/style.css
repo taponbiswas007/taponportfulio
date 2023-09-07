@@ -432,6 +432,9 @@ circle{
     border-radius: 25px;
     border: 6px solid #140c6c;
 }
+.service-images {
+    width: 80px;
+  }
 .responsive-service{
     display: none;
 }
@@ -547,7 +550,11 @@ circle{
     color: #3eff0e;
 }
 
+.about{
+    background: url(../images/homepage/water.gif) no-repeat 0 0 / 100% 100%;
+}
  /* footer area end */
+ 
 
 /*<======================================>
 <========================================>
