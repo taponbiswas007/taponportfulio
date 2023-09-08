@@ -79,7 +79,7 @@ const interval = setInterval(() => {
 AOS.init();
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 3.5,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
@@ -88,7 +88,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 var swiper = new Swiper(".small-screen", {
-  slidesPerView: 2,
+  slidesPerView: 2.5,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
@@ -97,7 +97,7 @@ var swiper = new Swiper(".small-screen", {
   },
 });
 var swiper = new Swiper(".smallest-screen", {
-  slidesPerView: 1,
+  slidesPerView: 1.5,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
