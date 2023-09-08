@@ -545,9 +545,10 @@ circle{
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 18px;
     color: #3eff0e;
+    padding-top: 7px;
 }
 
 .about-area{
@@ -557,6 +558,7 @@ circle{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    border-radius: 20px;
 }
 
 .bottom-logo{
@@ -569,7 +571,8 @@ circle{
     align-items: flex-start;
     flex-direction: column;
     row-gap: 10px;
-    border-radius: 15px;
+    
+
 }
 .name{
     font-family: 'Mulish';
@@ -639,6 +642,9 @@ circle{
     align-items: center;
     margin-top: 40px;
     flex-direction: column;
+}
+.finishing-describe{
+    text-align: center;
 }
  /* footer area end */
  
@@ -854,4 +860,7 @@ circle{
     border: 1px solid #04031a;
     padding-top: 2px;
 
+}
+.loginpagesocialicon >a:hover{
+    color: #0fe645;
 }

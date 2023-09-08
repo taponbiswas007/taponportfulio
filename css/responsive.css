@@ -53,6 +53,11 @@
         flex-wrap: wrap;
         row-gap: 40px;
     }
+    .address-area , .help-center{
+        border-bottom: 2px solid lightblue;
+        padding-bottom: 40px;
+        width: 100%;
+    }
 }
 @media (max-width: 768px){
     #main-hero-area {
@@ -238,5 +243,11 @@
         padding: 2px 20px;
     }
    
-
+    .finishing-describe{
+        font-size: 10px;
+    }
+    .name ,.mobile-number , .email-address, .address, 
+    .help,.subscribs, .subscribe-btn, .finishing-describe{
+        font-size: 12px;
+    }
 }
