@@ -49,6 +49,10 @@
     .woner-pic{
         width: 376px;
     }
+    .about-area{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
 }
 @media (max-width: 768px){
     #main-hero-area {
