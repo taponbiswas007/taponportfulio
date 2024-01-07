@@ -656,10 +656,39 @@ circle{
   }
   /* about us area end */
 
-  #world-map {
+  /* map area start */
+  .map-area{
+    background: #0f1037;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .map-area h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 134.02%;
+    text-align: center;
+    color: #f815ff;
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  #world-map{
+    height: 400px;
     width: 100%;
-    height: 100%;
-    }
+    background-color: transparent;
+  }
+  .jvectormap-container{
+    background: #04031a !important;
+  }
+
+  /* map area end */
+
   /* footer area start */
   .footer{
     position: fixed;

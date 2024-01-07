@@ -553,7 +553,7 @@
                                             <div class="col-lg-6">
                                                 <div class="my_picture_are">
                                                     <h1>about us</h1>
-                                                   <div class="my_picture">
+                                                   <div class="my_picture" >
                                                     <div class="my-picture-main-area">
                                                         <img src="images/homepage/my_picture.jpg" alt="img">
                                                     </div>
@@ -628,7 +628,10 @@
                             <!-- about us area  end -->
 
                             <!-- map area start -->
-                            <div id="world-map" style="width: 600px; height: 400px;"></div>
+                            <section class="map-area">
+                                <h1>My customers are worldwide</h1>
+                                <div id="world-map"></div>
+                            </section>
 
                             <!-- map area end -->
 
@@ -708,13 +711,47 @@
    
 
     <!-- javascript section-->
-    <script src="js/jquery-jvectormap-2.0.5.min.js"></script>
-    <script src="path/to/jquery-jvectormap-world-mill.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="js/map.js"></script>
+   
 
     <script src="js/main.js"></script>
+
+    <script>
+        var gdpData = {
+            "US": 100,
+            "CA": 50,
+            "RU": 20,
+            "AO": 5,
+            "AG": 0,
+            "AR": 30,
+            "BD": 400,
+            "IN": 200,
+            "PH": 5
+      
+            };
+        $('#world-map').vectorMap({
+            map:'world_merc',
+            focusOn: {
+                        x: 0.5,
+                        y: 0.5,
+                        scale: 1.7 // Adjust the scale value as needed
+                    },
+            series: {
+                regions: [{
+                values: gdpData,
+                scale: ['#F7EC0A', '#F90D06 '],
+                normalizeFunction: 'polynomial'
+                }]
+            },
+            onRegionTipShow: function(e, el, code){
+                el.html(el.html()+' (Customer - '+gdpData[code]+')');
+            }
+        });
+    </script>
 </body>
 </html>
