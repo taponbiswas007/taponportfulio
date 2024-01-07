@@ -121,6 +121,10 @@
     .woner-pic {
         width: 279px;
     }
+    .sales-area, .about-us-main-area, .map-area{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 
 }
 @media (max-width: 600px){
