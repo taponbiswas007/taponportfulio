@@ -26,23 +26,26 @@ $(document).ready(function(){
   animateWords($(".my-description").text().trim().split(" "));
 
 
-function animateWords(words) {
-  let i = 0;
-  const paragraph = $(".my-description");
-  paragraph.empty();
+  function animateWords(words) {
+    let i = 0;
+    const paragraph = $(".my-description");
+    paragraph.empty();
 
-  function addWord() {
-    if (i < words.length) {
-      paragraph.append(`<span>${words[i]}</span> `);
-      i++;
-      setTimeout(addWord, 500); // Adjust the delay (in milliseconds) as needed
+    function addWord() {
+      if (i < words.length) {
+        paragraph.append(`<span>${words[i]}</span> `);
+        i++;
+        setTimeout(addWord, 500); // Adjust the delay (in milliseconds) as needed
+      }
     }
+
+    addWord();
+
   }
 
-  addWord();
+ 
 
-}
-
+    
 
 });
 
@@ -105,6 +108,7 @@ var swiper = new Swiper(".smallest-screen", {
     clickable: true,
   },
 });
+
 
 
 
