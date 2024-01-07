@@ -304,7 +304,6 @@ html{
 
 circle{
     fill: none;
-    stroke: url(#GradientColor);
     stroke-width: 10px;
     stroke-dasharray: 345;
     stroke-dashoffset: 345;
@@ -312,6 +311,7 @@ circle{
 }
 #html circle{
     animation: anim 4.1s linear forwards;
+    stroke: url(#GradientColor);
 }
 
 @keyframes anim{
@@ -686,8 +686,62 @@ circle{
   .jvectormap-container{
     background: #04031a !important;
   }
-
+ 
   /* map area end */
+
+  /* dashboard area start */
+  .sales-area{
+    background: #0f1037;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .box {
+    background-color: #2B2D3E;
+    padding: 25px 20px;
+  }
+  
+  .shadow {
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  }
+  .sparkboxes .box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px 1px #666;
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .sparkboxes .box .details {
+    position: absolute;
+    color: #fff;
+    transform: scale(0.7) translate(-22px, 20px);
+  }
+  .sparkboxes strong {
+    position: relative;
+    z-index: 3;
+    top: -8px;
+    color: #fff;
+  }
+  
+  
+  .sparkboxes .box1 {
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+  }
+  
+  .sparkboxes .box2 {
+    background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
+  }
+  
+  .sparkboxes .box3 {
+    background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+  }
+  
+  .sparkboxes .box4 {
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+  }
+  /* dash board area end */
 
   /* footer area start */
   .footer{
