@@ -34,18 +34,32 @@ html{
 <======================================>
 <======================================>*/
 
+.wrap{
+    height: 3000px;
+ }
+
+
+
 /*----header area start----*/
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
     background: #0f1037;
-    z-index: 99999999;
     width: 100%;
     padding:20px;
+    height: 100px;
+   transition: all .5s ease;
 }
+.header.header-stikey{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 999999999999999999999999999;
+    box-shadow: -1px 12px 11px -6px rgba(85,3,255,0.75);
+}
+
 .toggle{
     color: #20FF00;
     font-size: 30px;
@@ -53,6 +67,7 @@ html{
     border-radius: 7px;
     cursor: pointer;
     height: 40px;
+    display: none;
 }
 .cross{
     display: none;
@@ -532,7 +547,7 @@ circle{
   .about-us-main-area{
     background: #0f1037;
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 0;
   }
   .about-us-main-area h1{
     font-family: 'Inter';
@@ -556,7 +571,6 @@ circle{
     margin-bottom: 40px;
   }
   .about-us-main-content-area{
-    background: #8a78fd;
     padding: 100px 0;
   }
   .my_picture_are h1{
@@ -566,10 +580,12 @@ circle{
     font-size: 30px;
     line-height: 134.02%;
     text-align: center;
-    color: #15399E;
+    color: #0396FF;
     text-transform: capitalize;
 
   }
+ 
+  
   .my_picture::after{
     width: 94%;
     height: 100px;
@@ -582,6 +598,7 @@ circle{
     z-index: 1;
     animation: picborder 3s ease;
   }
+
   @keyframes picborder {
     0%{
         width: 0;
@@ -617,7 +634,6 @@ circle{
     }
   }
   .about-us-content-area{
-    background: #C988FF;
     padding: 100px 40px 20px 20px;
     margin-right: 50px;
     height: 100%;

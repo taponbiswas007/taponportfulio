@@ -21,7 +21,14 @@ $(document).ready(function(){
     });  
   
   });
-  
+  //header stiky
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 10) {
+        $('.header').addClass('header-stikey');
+    } else {
+        $('.header').removeClass('header-stikey');
+    }
+});
 
   animateWords($(".my-description").text().trim().split(" "));
 
@@ -57,12 +64,19 @@ $(document).ready(function(){
       }
   });
 
-
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+ 
   
 });
 
 //jquery area end
-
 
 
 //java script area start
