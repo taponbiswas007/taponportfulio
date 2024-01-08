@@ -43,6 +43,22 @@ $(document).ready(function(){
 
   }
 
+
+  var isExpanded = false;
+
+  $(".read_more").click(function(){
+      $(".about_more_area").slideToggle();
+      isExpanded = !isExpanded;
+      
+      if(isExpanded){
+          $(this).text("Show Less");
+      } else {
+          $(this).text("Read More");
+      }
+  });
+
+
+  
 });
 
 //jquery area end
@@ -580,6 +596,12 @@ var chartArea = new ApexCharts(
 );
 
 chartArea.render();
+
+
+
+
+//display reload function start
+
 
 
 

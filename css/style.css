@@ -623,7 +623,7 @@ circle{
   }
   .about-us-content-area{
     background: #C988FF;
-    padding: 40px;
+    padding: 100px 40px 20px 20px;
     margin-right: 50px;
     height: 100%;
     border-radius: 10px;
@@ -640,6 +640,7 @@ circle{
     margin-bottom: 0;
     padding-bottom: 50px;
   }
+ 
   .about_content_devider{
     border-left: 4px solid #c31af2;
     position: relative;
@@ -653,6 +654,25 @@ circle{
     position: absolute;
     top: 6px;
     left: -7px;
+  }
+  .read_more{
+    background:none;
+    color: #ffffff ;
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: 3px solid #140c6c;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 50px;
+    background: rgba(0, 0, 0, 0.25);
+  }
+  .read_more:hover{
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .about_more_area{
+    display: none;
   }
   /* about us area end */
 
