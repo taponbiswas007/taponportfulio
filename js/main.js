@@ -3,22 +3,16 @@ $(document).ready(function(){
   $(".bars").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".nav-title").css({"opacity":"100%", "transition":".4s ease" });
-    $(".menu").css({"width":"165px", "transition":".4s ease"}); 
-    $(".main-content-area").css({"width":"calc(100%-165px)", "transition":".4s ease"
-      
-    });
+    $(".menubar").css({"left":"0", "transition":".4s ease" });
+   
     
     
   });
   $(".cross").click(function(){
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".nav-title").css({"opacity":"0", "transition":".3s ease"});
-    $(".menu").css({"width":"60px", "transition":".4s ease"}); 
-    $(".main-content-area").css({"width":"calc(100%-60px)", "transition":".4s ease"
-      
-    });  
+    $(".menubar").css({"left":"-100%", "transition":".3s ease"});
+     
   
   });
   //header stiky
@@ -28,8 +22,16 @@ $(document).ready(function(){
     } else {
         $('.header').removeClass('header-stikey');
     }
-});
+  });
 
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
   animateWords($(".my-description").text().trim().split(" "));
 
 
@@ -64,14 +66,7 @@ $(document).ready(function(){
       }
   });
 
-  // Function to check if an element is in the viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-  }
+ 
  
   
 });

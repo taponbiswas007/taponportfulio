@@ -1,4 +1,8 @@
-
+@media (max-width: 1200px){
+    .box{
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 1100px){
     .service-area{
         padding: 11px;
@@ -8,6 +12,12 @@
     }
     .loginpage-area{
         column-gap: 9px;
+    }
+    .box{
+        margin-bottom: 20px;
+    }
+    .map-area h1{
+        font-size: 20px;
     }
 }
 @media (max-width: 992px){
@@ -19,7 +29,7 @@
         font-size: 12px;
     }
     .my-description{
-        font-size: 10px;
+        font-size: 12px;
     }
     .html-progress-head{
         font-size: 12px;
@@ -71,7 +81,7 @@
         font-size: 13px;
     }
     .my-header {
-        font-size: 8px;
+
         line-height: 10px;
         margin-top: 5px;
     }
@@ -125,7 +135,27 @@
         padding-left: 5px;
         padding-right: 5px;
     }
-
+    .toggle{
+        display: block;
+    }
+    .menubar{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        background: #0f1037;
+        z-index: 999999999999999;
+        width: 170px;
+        padding: 10px;
+    }
+    .menulist{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+    .menuitem{
+        width: 100%;
+    }
 }
 @media (max-width: 600px){
     .responsive-service{
@@ -143,9 +173,7 @@
 }
 @media (max-width: 481px){
    
-    .welcome{
-        font-size: 8px;
-    }
+   
     .my-name{
         font-size: 12px;
     }
@@ -153,14 +181,8 @@
         font-size: 7px;
         margin-bottom: 0;
     }
-    .my-description {
-        font-size: 8px;
-        -webkit-text-stroke: #F5F5F5 0.1px;
-        line-height: 10px;
-    }
-    .progress-area {
-     
-    }
+   
+   
     .small-screen{
         display:none;
     }

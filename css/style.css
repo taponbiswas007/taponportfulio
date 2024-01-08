@@ -74,7 +74,7 @@ html{
 }
 
 .logo{
-    width: 50px;
+    width: 100px;
    
 }
 /*----header area end---*/
@@ -93,9 +93,7 @@ html{
     margin-bottom: 0;
     padding-left: 0;
 }
-.menubar{
-  
-}
+
 .navlink{
     display: flex;
     align-items: center;
@@ -131,10 +129,7 @@ html{
     padding: 100px 30px 100px 30px;
     
 }
-.hero{
-    
-  
-}
+
 .hero-top{
     text-align: center;
    
@@ -586,7 +581,7 @@ circle{
   }
  
   
-  .my_picture::after{
+  .my_picture::after {
     width: 94%;
     height: 100px;
     content: ' ';
@@ -594,35 +589,60 @@ circle{
     position: absolute;
     bottom: -40px;
     left: 0;
-    
     z-index: 1;
     animation: picborder 3s ease;
   }
+  
 
   @keyframes picborder {
-    0%{
-        width: 0;
+    0% {
+      width: 0;
     }
-    100%{
-        width: 94%;
+    100% {
+      width: 94%;
     }
   }
+  /* .my_picture:hover::after{
+    animation: picborder-hover 3s ease;
+  }
+  .my-picture-main-area:hover {
+    animation: mypicture-hover 3s forwards;
+}
+
+  @keyframes picborder-hover {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 94%;
+    }
+  }
+  @keyframes mypicture-hover {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
   .my-picture-main-area {
     z-index: 2;
     width: 250px;
     height: 300px;
-    /* border: 5px solid #0fe645; */
     overflow: hidden;
-    opacity: 0; /* Initially hide the element */
-    animation: mypicture 3s forwards; /* Apply the animation */
+    opacity: 0;
+    animation: mypicture 3s forwards;
   }
-
+  
+  
   .my-picture-main-area img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
+  
   @keyframes mypicture {
     0% {
       transform: translateY(-100%);
@@ -633,6 +653,9 @@ circle{
       opacity: 1;
     }
   }
+  
+
+  
   .about-us-content-area{
     padding: 100px 40px 20px 20px;
     margin-right: 50px;
@@ -713,6 +736,7 @@ circle{
     height: 400px;
     width: 100%;
     background-color: transparent;
+    padding: 0 20px 20px 20px;
   }
   .jvectormap-container{
     background: #04031a !important;
