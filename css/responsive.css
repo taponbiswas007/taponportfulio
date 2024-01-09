@@ -1,144 +1,185 @@
-@media (max-width: 1200px){
-    .box{
+@media (max-width: 1200px) {
+    .box {
         margin-bottom: 20px;
     }
 }
-@media (max-width: 1100px){
-    .service-area{
+
+@media (max-width: 1100px) {
+    .service-area {
         padding: 11px;
     }
-    .service-area span{
+
+    .service-area span {
         font-size: 13px;
     }
-    .loginpage-area{
+
+    .loginpage-area {
         column-gap: 9px;
     }
-    .box{
+
+    .box {
         margin-bottom: 20px;
     }
-    .map-area h1{
+
+    .map-area h1 {
         font-size: 20px;
     }
 }
-@media (max-width: 992px){
 
-    .my-name{
+@media (max-width: 992px) {
+
+    .my-name {
         font-size: 18px;
     }
-    .my-header{
+
+    .my-header {
         font-size: 12px;
     }
-    .my-description{
+
+    .my-description {
         font-size: 12px;
     }
-    .html-progress-head{
+
+    .html-progress-head {
         font-size: 12px;
     }
-    .service-area{
+
+    .service-area {
         width: 19%;
         padding: 12px;
     }
-    .service-area span{
+
+    .service-area span {
         font-size: 10px;
     }
+
     .chooscatagory {
         padding-top: 23px;
         padding-bottom: 11px;
     }
+
     .catagorylogo {
         width: 51px;
     }
-    .chooscatagory > h1{
+
+    .chooscatagory>h1 {
         font-size: 10px;
     }
+
     .loginpage-area {
         flex-direction: column;
         row-gap: 40px;
         margin-top: 40px;
     }
-    .woner-pic{
+
+    .woner-pic {
         width: 376px;
     }
-    .about-area{
+
+    .about-area {
         flex-wrap: wrap;
         row-gap: 40px;
     }
-    .address-area , .help-center{
+
+    .address-area,
+    .help-center {
         border-bottom: 2px solid lightblue;
         padding-bottom: 40px;
         width: 100%;
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     #main-hero-area {
         padding: 71px 15px 70px 15px;
     }
-    .welcome{
+
+    .welcome {
         font-size: 10px;
         margin-bottom: -7px;
     }
+
     .my-name {
         font-size: 13px;
     }
+
     .my-header {
 
         line-height: 10px;
         margin-top: 5px;
     }
-    .myexpartness{
+
+    .myexpartness {
         font-size: 10px;
     }
-    .progress-area{
-       
+
+    .progress-area {
+
         padding: 0px 0px 12px 0px;
     }
-    .service-heading > h1{
+
+    .service-heading>h1 {
         font-size: 14px;
     }
-    .responsive-service-main-area{
+
+    .responsive-service-main-area {
         display: none;
     }
-    .responsive-service{
+
+    .responsive-service {
         display: block;
     }
-   
+
     .service-area {
         width: 100%;
         padding: 12px;
         row-gap: 0px;
     }
+
     .service-area span {
         font-size: 8px;
     }
-    .service-images{
+
+    .service-images {
         width: 60px;
     }
-    .swiper-pagination{
+
+    .swiper-pagination {
         margin-bottom: -15px;
     }
-    .choosuscatagory-area{
+
+    .choosuscatagory-area {
         margin: 0 7px;
     }
+
     .catagorylogo {
         width: 30px;
     }
-    .inputloginemail{
+
+    .inputloginemail {
         width: 235px;
     }
-    .inputloginpassword{
+
+    .inputloginpassword {
         width: 235px;
     }
+
     .woner-pic {
         width: 279px;
     }
-    .sales-area, .about-us-main-area, .map-area{
+
+    .sales-area,
+    .about-us-main-area,
+    .map-area {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .toggle{
+
+    .toggle {
         display: block;
     }
-    .menubar{
+
+    .menubar {
         position: fixed;
         top: 100px;
         left: -100%;
@@ -147,133 +188,171 @@
         width: 170px;
         padding: 10px;
     }
-    .menulist{
+
+    .menulist {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         row-gap: 10px;
     }
-    .menuitem{
+
+    .menuitem {
         width: 100%;
     }
 }
-@media (max-width: 600px){
-    .responsive-service{
+
+@media (max-width: 600px) {
+    .responsive-service {
         display: none;
     }
-    .small-screen{
+
+    .small-screen {
         display: block;
     }
-    .chooscatagory > h1 {
+
+    .chooscatagory>h1 {
         margin-top: 9px;
         font-size: 7px;
     }
 
 
 }
-@media (max-width: 481px){
-   
-   
-    .my-name{
+
+@media (max-width: 481px) {
+
+
+    .my-name {
         font-size: 12px;
     }
+
     .my-header {
         font-size: 7px;
         margin-bottom: 0;
     }
-   
-   
-    .small-screen{
-        display:none;
+
+
+    .small-screen {
+        display: none;
     }
-    .smallest-screen{
+
+    .smallest-screen {
         display: block;
     }
+
     .service-images {
         width: 80px;
     }
+
     .service-area span {
         font-size: 9px;
     }
-    .service-heading > h1 {
+
+    .service-heading>h1 {
         font-size: 11px;
     }
-    .service-underline{
+
+    .service-underline {
         height: 3px;
     }
-    .whychoosus-title > h1{
+
+    .whychoosus-title>h1 {
         font-size: 12px;
     }
-    .whychoosus-title > p{
+
+    .whychoosus-title>p {
         font-size: 9px;
         margin-bottom: 0;
     }
-    .choosuscatagory-area{
+
+    .choosuscatagory-area {
         flex-direction: column;
     }
+
     .chooscatagory {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #350FBF;
     }
-    .chooscatagory:last-child{
+
+    .chooscatagory:last-child {
         border-bottom: none;
     }
+
     .catagorylogo {
         width: 48px;
     }
-    .chooscatagory > h1{
+
+    .chooscatagory>h1 {
         font-size: 11px;
     }
+
     .inputloginemail {
         width: 175px;
     }
+
     .inputloginpassword {
         width: 175px;
     }
-    .mainloginarea h1{
+
+    .mainloginarea h1 {
         font-size: 20px;
         margin-top: 0;
         margin-bottom: 0;
     }
-    .mainloginarea p{
+
+    .mainloginarea p {
         font-size: 12px;
     }
+
     .mainloginarea h2::before {
         width: 37%;
         right: -30px;
         top: 6px;
     }
+
     .mainloginarea h2::after {
         width: 37%;
         left: -30px;
         top: 6px;
     }
-    .loginpagesocialicon{
+
+    .loginpagesocialicon {
         column-gap: 10px;
     }
-    .mainloginarea h2{
+
+    .mainloginarea h2 {
         font-size: 10px;
     }
-    .loginareabottom p button{
+
+    .loginareabottom p button {
         font-size: 11px;
     }
-    .mainloginarea p{
+
+    .mainloginarea p {
         font-size: 9px;
     }
+
     .woner-pic {
         width: 178px;
         padding: 16px;
     }
-    .loginploginbtn{
+
+    .loginploginbtn {
         padding: 2px 20px;
     }
-   
-    .finishing-describe{
+
+    .finishing-describe {
         font-size: 10px;
     }
-    .name ,.mobile-number , .email-address, .address, 
-    .help,.subscribs, .subscribe-btn, .finishing-describe{
+
+    .name,
+    .mobile-number,
+    .email-address,
+    .address,
+    .help,
+    .subscribs,
+    .subscribe-btn,
+    .finishing-describe {
         font-size: 12px;
     }
 }
