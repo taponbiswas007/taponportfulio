@@ -1,26 +1,31 @@
+$(document).ready(function () {
+  $(".bars").click(function () {
+    $(".bars").toggle();
+    $(".cross").toggle();
+    $(".menubar").css({
+      "left": "0",
+      "transition": ".4s ease"
+    });
 
-$(document).ready(function(){
-  $(".bars").click(function(){
-    $(".bars").toggle();
-    $(".cross").toggle();
-    $(".menubar").css({"left":"0", "transition":".4s ease" });
-   
-    
-    
+
+
   });
-  $(".cross").click(function(){
+  $(".cross").click(function () {
     $(".bars").toggle();
     $(".cross").toggle();
-    $(".menubar").css({"left":"-100%", "transition":".3s ease"});
-     
-  
+    $(".menubar").css({
+      "left": "-100%",
+      "transition": ".3s ease"
+    });
+
+
   });
   //header stiky
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 10) {
-        $('.header').addClass('header-stikey');
+      $('.header').addClass('header-stikey');
     } else {
-        $('.header').removeClass('header-stikey');
+      $('.header').removeClass('header-stikey');
     }
   });
 
@@ -55,20 +60,20 @@ $(document).ready(function(){
 
   var isExpanded = false;
 
-  $(".read_more").click(function(){
-      $(".about_more_area").slideToggle();
-      isExpanded = !isExpanded;
-      
-      if(isExpanded){
-          $(this).text("Show Less");
-      } else {
-          $(this).text("Read More");
-      }
+  $(".read_more").click(function () {
+    $(".about_more_area").slideToggle();
+    isExpanded = !isExpanded;
+
+    if (isExpanded) {
+      $(this).text("Show Less");
+    } else {
+      $(this).text("Read More");
+    }
   });
 
- 
- 
-  
+
+
+
 });
 
 //jquery area end
@@ -90,19 +95,19 @@ const interval = setInterval(() => {
     counter += 1;
     numb1.textContent = counter + "%";
 
-   
+
     if (counter <= 93) {
       numb2.textContent = counter + "%";
     }
-  
+
     if (counter <= 66) {
       numb3.textContent = counter + "%";
     }
-   
+
     if (counter <= 89) {
       numb4.textContent = counter + "%";
     }
-   
+
   }
 }, 31);
 
@@ -460,36 +465,36 @@ chartLine.render();
 var options = {
   series: [27, 32, 43, 50, 23],
   chart: {
-  height: 350,
-  type: 'radialBar',
-},
-title: {
-  text: 'Last month total project',
-  align: 'left',
-  offsetY: 25,
-  offsetX: 20
-},
-plotOptions: {
-  radialBar: {
-    dataLabels: {
-      name: {
-        fontSize: '22px',
-      },
-      value: {
-        fontSize: '16px',
-      },
-      total: {
-        show: true,
-        label: 'Total',
-        formatter: function (w) {
-          // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-          return 175
+    height: 350,
+    type: 'radialBar',
+  },
+  title: {
+    text: 'Last month total project',
+    align: 'left',
+    offsetY: 25,
+    offsetX: 20
+  },
+  plotOptions: {
+    radialBar: {
+      dataLabels: {
+        name: {
+          fontSize: '22px',
+        },
+        value: {
+          fontSize: '16px',
+        },
+        total: {
+          show: true,
+          label: 'Total',
+          formatter: function (w) {
+            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+            return 175
+          }
         }
       }
     }
-  }
-},
-labels: ['Web design', 'Figma to HTML', 'XD to HTML ', 'AI to HTML','PSD to HTML'],
+  },
+  labels: ['Web design', 'Figma to HTML', 'XD to HTML ', 'AI to HTML', 'PSD to HTML'],
 };
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
@@ -515,26 +520,26 @@ var optionsBar = {
     },
   },
   series: [{
-    name: 'WEB DESIGN',
-    data: [14, 25, 21, 17, 12, 13, 11, 19, 45, 15, 41, 17]
-  }, 
-  {
-    name: 'FIGMA TO HTML',
-    data: [60, 50, 30, 40, 43, 57, 63, 42, 40, 45, 52, 65]
-  },
-   {
-    name: 'XD TO HTML',
-    data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 18, 20, 35]
-  },
-   {
-    name: 'AI TO HTML',
-    data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 45, 13, 32]
-  },
-   {
-    name: 'PSD TO HTML',
-    data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 10, 17, 10]
-  }
-],
+      name: 'WEB DESIGN',
+      data: [14, 25, 21, 17, 12, 13, 11, 19, 45, 15, 41, 17]
+    },
+    {
+      name: 'FIGMA TO HTML',
+      data: [60, 50, 30, 40, 43, 57, 63, 42, 40, 45, 52, 65]
+    },
+    {
+      name: 'XD TO HTML',
+      data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 18, 20, 35]
+    },
+    {
+      name: 'AI TO HTML',
+      data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 45, 13, 32]
+    },
+    {
+      name: 'PSD TO HTML',
+      data: [11, 17, 15, 15, 21, 14, 15, 13, 34, 10, 17, 10]
+    }
+  ],
   xaxis: {
     categories: ['2023 JAN', '2023 FEB', '2023 MAR', '2023 APR', '2023 MAY', '2023 JUN', '2023 JUL', '2023 AUG', ' 2023 SEP', '2023 OCT', '2023 NOV', '2023 DEC'],
   },
@@ -610,7 +615,3 @@ chartArea.render();
 
 
 //display reload function start
-
-
-
-
